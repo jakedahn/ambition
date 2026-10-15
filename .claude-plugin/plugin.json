@@ -1,0 +1,11 @@
+{
+  "name": "ambition",
+  "version": "0.1.0",
+  "description": "Raise the ambition of a task before doing it: altitude (own the outcome beyond the task), depth (the best practitioner's instruments, the rawest material, an outside judge) and range (other fields' methods, never their voices). Adds /ambition.",
+  "author": {
+    "name": "Jake Dahn",
+    "url": "https://github.com/jakedahn"
+  },
+  "repository": "https://github.com/jakedahn/ambition",
+  "keywords": ["ambition", "prompting", "planning", "skill"]
+}

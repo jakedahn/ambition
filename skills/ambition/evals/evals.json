@@ -1,0 +1,62 @@
+{
+  "skill_name": "ambition",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Here's the prompt I run every Monday for a metrics email to the team. Make it more ambitious.\n\n\"Pull last week's PostHog numbers for signups, weekly active organizations, and MCP sessions, compare them to the week before, and write a short email to the team summarizing the changes.\"\n\nContext: I'm the founder of a small B2B startup, we have a handful of pilot customers live, and the team is small. PostHog is connected over MCP and the production Postgres is readable.",
+      "expected_output": "A rewritten ask that moves from reporting numbers to owning an outcome (early detection of problems / decisions), names raw sources (events table, session recordings, production DB) instead of dashboard tiles, specifies real analytical instruments and a specific target, names an outside judge that is not the model, lists what access it needs, and offers a next rung. Short, paste-able, no persona role-play.",
+      "files": [],
+      "expectations": [
+        "States a goal beyond the literal task: an outcome the user wants to be true afterward, distinct from the task itself",
+        "Provides a rewritten ask the user could paste as a prompt or hand to a teammate, set apart from the commentary",
+        "Names at least one raw source an expert would start from (event tables, run history, session recordings, chat threads, DB rows) rather than only the digested summary the user mentioned",
+        "Names a specific method, tool or instrument a top practitioner would use, beyond a change of vocabulary (a named statistical test, a named analysis technique, a measured study, a profiler)",
+        "Sets at least one specific numeric target rather than only relative words like better, fewer or clearer",
+        "Names an outside judge of success that is neither the model nor the user: a measurement, held-out data, a test that runs, or real users' observed behavior",
+        "Lists concrete access, data or tools the ambitious version requires that the user has not yet confirmed",
+        "Does not instruct the model to adopt a persona or role-play (no 'act as', 'you are a', in-character dialogue); any crew member contributes a method rather than a voice",
+        "Names a next, higher-altitude rung beyond the rewritten ask (a different outcome or cadence, not more content in the same deliverable) and the specific resource, access or decision that would unlock it",
+        "The whole response is under 900 words: deeper, not bigger",
+        "Climbs altitude from reporting week-over-week changes to decisions or early problem detection (asks what to do, which decisions are urgent, or how to catch problems sooner than a weekly email)"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I keep asking Claude to fix flaky CI tests one at a time, whenever one bites us. Our CI runs on self-hosted GitHub Actions runners, the repo is a Go server plus a C++ kernel plus a Next.js frontend, and the test suite takes about 25 minutes. What should I be asking for instead? Be ambitious.",
+      "expected_output": "An altitude climb from one-fix-at-a-time to owning CI reliability as an outcome, with a concrete rewritten ask, a numeric target (e.g. flake rate), the raw material (CI run logs/history, not the failing test), the instruments (rerun statistics, timing analysis, quarantine policy), an outside judge (measured flake rate over N runs on real runners), the access needed (runner access, Actions API, ability to open PRs), and a next rung. No role-play.",
+      "files": [],
+      "expectations": [
+        "States a goal beyond the literal task: an outcome the user wants to be true afterward, distinct from the task itself",
+        "Provides a rewritten ask the user could paste as a prompt or hand to a teammate, set apart from the commentary",
+        "Names at least one raw source an expert would start from (event tables, run history, session recordings, chat threads, DB rows) rather than only the digested summary the user mentioned",
+        "Names a specific method, tool or instrument a top practitioner would use, beyond a change of vocabulary (a named statistical test, a named analysis technique, a measured study, a profiler)",
+        "Sets at least one specific numeric target rather than only relative words like better, fewer or clearer",
+        "Names an outside judge of success that is neither the model nor the user: a measurement, held-out data, a test that runs, or real users' observed behavior",
+        "Lists concrete access, data or tools the ambitious version requires that the user has not yet confirmed",
+        "Does not instruct the model to adopt a persona or role-play (no 'act as', 'you are a', in-character dialogue); any crew member contributes a method rather than a voice",
+        "Names a next, higher-altitude rung beyond the rewritten ask (a different outcome or cadence, not more content in the same deliverable) and the specific resource, access or decision that would unlock it",
+        "The whole response is under 900 words: deeper, not bigger",
+        "Reframes the unit of work from one flaky test to CI reliability as an owned outcome (flake rate, green-run rate, time-to-green) and names a workflow change that lets the agent act alone (run-history access, runner access, ability to open PRs)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our docs site has a getting-started tutorial for the CLI and it's not landing with new users. I was going to tell Claude: \"Rewrite the getting-started tutorial so it's clearer and shorter.\" Use the ambition skill on that. We have PostHog on the docs site and a Discord where people ask questions.",
+      "expected_output": "Recognizes this is partly a craft/taste task and leans on depth and range rather than pure altitude: names what a top technical writer or instructional designer would do (task analysis, watching real first runs), the rawest material (PostHog funnel on the tutorial page, Discord questions, actual terminal sessions), a specific target (completion rate), an outside judge (real new users completing the tutorial, measured), a crew whose methods are borrowed rather than voiced, the access needed, and a next rung. Does not just produce a longer tutorial or a persona dialogue.",
+      "files": [],
+      "expectations": [
+        "States a goal beyond the literal task: an outcome the user wants to be true afterward, distinct from the task itself",
+        "Provides a rewritten ask the user could paste as a prompt or hand to a teammate, set apart from the commentary",
+        "Names at least one raw source an expert would start from (event tables, run history, session recordings, chat threads, DB rows) rather than only the digested summary the user mentioned",
+        "Names a specific method, tool or instrument a top practitioner would use, beyond a change of vocabulary (a named statistical test, a named analysis technique, a measured study, a profiler)",
+        "Sets at least one specific numeric target rather than only relative words like better, fewer or clearer",
+        "Names an outside judge of success that is neither the model nor the user: a measurement, held-out data, a test that runs, or real users' observed behavior",
+        "Lists concrete access, data or tools the ambitious version requires that the user has not yet confirmed",
+        "Does not instruct the model to adopt a persona or role-play (no 'act as', 'you are a', in-character dialogue); any crew member contributes a method rather than a voice",
+        "Names a next, higher-altitude rung beyond the rewritten ask (a different outcome or cadence, not more content in the same deliverable) and the specific resource, access or decision that would unlock it",
+        "The whole response is under 900 words: deeper, not bigger",
+        "Treats tutorial quality as a measured outcome of real new users (completion, funnel drop-off, time to first success) rather than clarity judged by the writer, and borrows at least one method from a field beyond technical writing (instructional design, UX research, support-thread mining, analytics)"
+      ]
+    }
+  ]
+}
